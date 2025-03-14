@@ -1,0 +1,26 @@
+<style>
+    body {
+        background: linear-gradient(to bottom, #1E3A8A, #60A5FA); /* Equivalent to Tailwind bg-gradient-to-b from-blue-900 to-blue-400 */
+        color: white;
+    }
+    .btn-custom {
+        padding: 12px 24px;
+        border-radius: 50px;
+        font-size: 1.2rem;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    .btn-custom:hover {
+        transform: scale(1.05);
+    }
+</style>
+<body class="d-flex align-items-center justify-content-center min-vh-100 text-center">
+    <div class="container">
+        <img src="logo.png" alt="Logo" class="img-fluid mb-4" style="max-width: 150px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+        <h1 class="fw-bold display-5">Intern Today, Lead Tomorrow</h1>
+        <p class="lead mt-3 mx-auto" style="max-width: 600px;">Rejoignez-nous et façonnez votre avenir professionnel avec une communauté engagée et des opportunités uniques.</p>
+        <div class="mt-4 d-flex flex-column flex-md-row gap-3 justify-content-center">
+            <button class="btn btn-light text-primary fw-semibold btn-custom shadow" onclick="navigateToLogin()">Login</button>
+            <button class="btn btn-primary text-white fw-semibold btn-custom shadow border border-white" onclick="navigateToRegister()">Signup</button>
+        </div>
+    </div>
+</body>
